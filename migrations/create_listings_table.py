@@ -26,6 +26,7 @@ def create_listings_table(metadata):
                      Column('city', String(255), nullable=False),
                      Column('state', String(2), nullable=False),
                      Column('zip', SmallInteger, nullable=False),
+                     Column('price', SmallInteger, nullable=False),
                      Column('country', String(255), nullable=False),
                      Column('latitude', Float, nullable=False),
                      Column('longitude', Float, nullable=False)
