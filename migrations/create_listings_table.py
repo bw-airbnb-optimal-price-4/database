@@ -1,5 +1,5 @@
 from sqlalchemy import Column, ForeignKey
-from sqlalchemy import Integer, String, Float, SmallInteger
+from sqlalchemy import Integer, String, Float
 from sqlalchemy import Table
 from sqlalchemy.dialects.postgresql import ENUM
 
@@ -25,8 +25,8 @@ def create_listings_table(metadata):
                      Column('picture_url', String(355)),
                      Column('city', String(255), nullable=False),
                      Column('state', String(2), nullable=False),
-                     Column('zip', SmallInteger, nullable=False),
-                     Column('price', SmallInteger, nullable=False),
+                     Column('zip', Integer, nullable=False),
+                     Column('price', Integer, nullable=False),
                      Column('country', String(255), nullable=False),
                      Column('latitude', Float, nullable=False),
                      Column('longitude', Float, nullable=False)

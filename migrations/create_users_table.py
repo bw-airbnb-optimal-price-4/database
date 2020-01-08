@@ -1,5 +1,5 @@
 from sqlalchemy import Column
-from sqlalchemy import Integer, String, Date, SmallInteger
+from sqlalchemy import Integer, String, Date
 from sqlalchemy import Table
 
 
@@ -11,7 +11,7 @@ def create_users_table(metadata):
                   Column('first_name', String(225)),
                   Column('last_name', String(255)),
                   Column('city', String(255)),
-                  Column('zip_code', SmallInteger),
+                  Column('zip_code', Integer),
                   Column('state', String(2)),
                   Column('date_of_birth', Date),
                   Column('profile_image', String(255))
